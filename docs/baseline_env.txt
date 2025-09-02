@@ -1,0 +1,7 @@
+Orphan Domains baseline environment
+Date: 2025-09-02T16:23:45-05:00
+Python: Python 3.11.9
+MMseqs2: 14.7e284
+HMMER: # hmmscan :: search sequence(s) against a profile database
+Foldseek: foldseek Version: 1.3c64211
+DPAM: planned v2.0 (not yet installed)

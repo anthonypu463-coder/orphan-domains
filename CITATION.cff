@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Orphan Domains Dataset
+message: "If you use this project, please cite it as below."
+type: dataset
+authors:
+  - family-names: Pu
+    given-names: Anthony
+version: 0.0.1
+date-released: 2025-09-02
+repository-code: "https://github.com/anthonypu463-coder/orphan-domains"
