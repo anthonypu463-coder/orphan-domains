@@ -1,0 +1,2 @@
+domain_id	uniprot_id	start	end	seq_md5	length	dataset_tag	created_at
+OD0000001	P12345	40	120	86a34762173768f76812287e047ec1ff	81	afdb:AFDB Swiss-Prot snapshot (2022) | pfam:37.4	2025-09-02T16:33:50

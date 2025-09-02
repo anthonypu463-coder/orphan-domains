@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/orphan/__init__.py
+src/orphan/cli.py
+src/orphan/config.py
+src/orphan/ids.py
+src/orphan/logging_utils.py
+src/orphan_domains.egg-info/PKG-INFO
+src/orphan_domains.egg-info/SOURCES.txt
+src/orphan_domains.egg-info/dependency_links.txt
+src/orphan_domains.egg-info/entry_points.txt
+src/orphan_domains.egg-info/requires.txt
+src/orphan_domains.egg-info/top_level.txt

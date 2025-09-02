@@ -1,0 +1,9 @@
+afdb:
+  release: AFDB Swiss-Prot snapshot (2022)
+  entries: ~542000
+pfam:
+  version: '37.4'
+  families: ~24736
+uniprot:
+  reference: Swiss-Prot (2022)
+notes: Counts are approximate; pin exact dates/DOIs when available.

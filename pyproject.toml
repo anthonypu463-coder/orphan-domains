@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orphan-domains"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = ["typer>=0.9", "PyYAML>=6"]
+
+[project.scripts]
+orphan = "orphan.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
