@@ -1,0 +1,9 @@
+# Python
+__pycache__/ .pytest_cache/ .mypy_cache/ .ruff_cache/ .ipynb_checkpoints/
+*.py[cod] *.so .env .venv/ .DS_Store
+# Conda/mamba
+env/ .conda/ .conda_env/ *.conda-lock
+# Project data
+data/afdb/ data/pfam/ data/outputs/
+# Logs & tmp
+logs/ *.log *.tmp

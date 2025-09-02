@@ -1,0 +1,18 @@
+name: orphan-domains
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - biopython
+  - networkx
+  - typer
+  - black
+  - ruff
+  - mypy
+  - pytest
+  - pre-commit
+  - mmseqs2=14.*
+  - hmmer=3.*
+  - foldseek=1.*
