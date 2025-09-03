@@ -1,0 +1,2 @@
+Pfam current_release fetched on 2025-09-03T10:20:29-05:00
+Expected release ~37.4 with ~24,736 families; see InterPro release notes.
