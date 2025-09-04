@@ -53,3 +53,6 @@ pfam_coverage: ## Compute Pfam coverage from non-overlapping domains
 
 pfam_finalize: ## Final non-overlapping Pfam architecture (optional same-clan trimming)
 	$(PY) scripts/finalize_domain_architecture.py --trim-policy same-clan --min-fragment 30
+
+pfam_arch_strings: ## Compile domain architecture strings + unannotated segments
+	$(PY) scripts/compile_architecture_strings.py
