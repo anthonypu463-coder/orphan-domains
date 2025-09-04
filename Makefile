@@ -77,3 +77,6 @@ orphan_zero_struct70: ## Build 0% Pfam & mean pLDDT ≥70 primary dataset
 
 cluster: ## MMseqs2 clustering of orphan_zero_struct70 (40% ID, cov 0.8 of shorter)
 	scripts/cluster_orphanZ70.sh
+
+cluster26k: ## Cluster the ~26k set at 40% ID (single-linkage, cov 0.8 of shorter)
+	scripts/cluster_strict26k.sh
