@@ -71,3 +71,6 @@ orphan_qc: ## QC orphan candidates (coverage < 0.20 + pLDDT stats; structural su
 
 orphan_datasets: ## Produce canonical <20% set + strict (~26k) + strict-structural subsets
 	$(PY) scripts/compile_orphan_datasets.py
+
+orphan_zero_struct70: ## Build 0% Pfam & mean pLDDT ≥70 primary dataset
+	$(PY) scripts/make_orphan_zero_struct70.py
