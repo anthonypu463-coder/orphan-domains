@@ -65,3 +65,6 @@ orphan_select: ## Select orphan-rich proteins (coverage < 0.20)
 
 orphan_compile: ## Build orphan sequences FASTA + metadata from candidates
 	$(PY) scripts/compile_orphan_sets.py
+
+orphan_qc: ## QC orphan candidates (coverage < 0.20 + pLDDT stats; structural subset)
+	$(PY) scripts/qc_orphan_candidates.py
