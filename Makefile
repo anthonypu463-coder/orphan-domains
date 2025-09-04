@@ -31,3 +31,16 @@ afdb_pae: ## Download PAE JSON for all accessions (parallel)
 
 pfam_download: ## Fetch Pfam-A HMM and index
 	cd data/pfam && wget -c https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz && gunzip -f Pfam-A.hmm.gz && hmmpress Pfam-A.hmm
+
+pfam_sequences: ## Build FASTA from AFDB mmCIFs
+	$(PY) scripts/extract_sequences.py --workers 8
+
+pfam_split: ## Split FASTA into shards
+	scripts/split_fasta.sh
+
+pfam_scan: ## Run hmmscan with Pfam-A --cut_ga across shards (parallel)
+	JOBS?=8 THREADS_PER?=1 scripts/run_hmmscan.sh
+
+pfam_parse: ## Parse domtblout into TSV and summarize coverage
+	$(PY) scripts/parse_hmmscan_domtbl.py
+	$(PY) scripts/summarize_pfam_coverage.py
