@@ -47,3 +47,6 @@ pfam_parse: ## Parse domtblout into TSV and summarize coverage
 
 pfam_resolve: ## Resolve overlaps: non-overlapping Pfam domains per protein
 	$(PY) scripts/resolve_domain_overlaps.py
+
+pfam_coverage: ## Compute Pfam coverage from non-overlapping domains
+	$(PY) scripts/compute_pfam_coverage.py
