@@ -62,3 +62,6 @@ pfam_arch_enhanced: ## Enhanced final annotations (domains + gap coordinates)
 
 orphan_select: ## Select orphan-rich proteins (coverage < 0.20)
 	$(PY) scripts/select_orphan_candidates.py
+
+orphan_compile: ## Build orphan sequences FASTA + metadata from candidates
+	$(PY) scripts/compile_orphan_sets.py
