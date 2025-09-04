@@ -68,3 +68,6 @@ orphan_compile: ## Build orphan sequences FASTA + metadata from candidates
 
 orphan_qc: ## QC orphan candidates (coverage < 0.20 + pLDDT stats; structural subset)
 	$(PY) scripts/qc_orphan_candidates.py
+
+orphan_datasets: ## Produce canonical <20% set + strict (~26k) + strict-structural subsets
+	$(PY) scripts/compile_orphan_datasets.py
