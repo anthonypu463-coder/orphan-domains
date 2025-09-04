@@ -59,3 +59,6 @@ pfam_arch_strings: ## Compile domain architecture strings + unannotated segments
 
 pfam_arch_enhanced: ## Enhanced final annotations (domains + gap coordinates)
 	$(PY) scripts/compile_domain_annotations_final.py
+
+orphan_select: ## Select orphan-rich proteins (coverage < 0.20)
+	$(PY) scripts/select_orphan_candidates.py
