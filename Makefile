@@ -44,3 +44,6 @@ pfam_scan: ## Run hmmscan with Pfam-A --cut_ga across shards (parallel)
 pfam_parse: ## Parse domtblout into TSV and summarize coverage
 	$(PY) scripts/parse_hmmscan_domtbl.py
 	$(PY) scripts/summarize_pfam_coverage.py
+
+pfam_resolve: ## Resolve overlaps: non-overlapping Pfam domains per protein
+	$(PY) scripts/resolve_domain_overlaps.py
