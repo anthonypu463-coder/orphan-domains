@@ -56,3 +56,6 @@ pfam_finalize: ## Final non-overlapping Pfam architecture (optional same-clan tr
 
 pfam_arch_strings: ## Compile domain architecture strings + unannotated segments
 	$(PY) scripts/compile_architecture_strings.py
+
+pfam_arch_enhanced: ## Enhanced final annotations (domains + gap coordinates)
+	$(PY) scripts/compile_domain_annotations_final.py
