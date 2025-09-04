@@ -74,3 +74,6 @@ orphan_datasets: ## Produce canonical <20% set + strict (~26k) + strict-structur
 
 orphan_zero_struct70: ## Build 0% Pfam & mean pLDDT ≥70 primary dataset
 	$(PY) scripts/make_orphan_zero_struct70.py
+
+cluster: ## MMseqs2 clustering of orphan_zero_struct70 (40% ID, cov 0.8 of shorter)
+	scripts/cluster_orphanZ70.sh
