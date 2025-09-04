@@ -50,3 +50,6 @@ pfam_resolve: ## Resolve overlaps: non-overlapping Pfam domains per protein
 
 pfam_coverage: ## Compute Pfam coverage from non-overlapping domains
 	$(PY) scripts/compute_pfam_coverage.py
+
+pfam_finalize: ## Final non-overlapping Pfam architecture (optional same-clan trimming)
+	$(PY) scripts/finalize_domain_architecture.py --trim-policy same-clan --min-fragment 30
