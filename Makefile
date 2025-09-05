@@ -92,3 +92,6 @@ cluster26k_outputs: ## Build member→cluster assignments + size summary (TSV/JS
 
 stage_structures: ## Stage AlphaFold structures (symlinks) for analysis; SET=reps_113k|reps_26k|all_113k, LIMIT=N optional
 	$(PY) scripts/prepare_structure_workspace.py --set $${SET:-reps_113k} ${LIMIT:+--limit $${LIMIT}}
+
+struct_consistency: ## Check sequence↔structure consistency; SET=reps_113k|reps_26k|all_113k, LIMIT=N optional
+	$(PY) scripts/check_sequence_structure_consistency.py --set $${SET:-reps_113k} ${LIMIT:+--limit $${LIMIT}}
