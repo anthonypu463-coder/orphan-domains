@@ -80,3 +80,6 @@ cluster: ## MMseqs2 clustering of orphan_zero_struct70 (40% ID, cov 0.8 of short
 
 cluster26k: ## Cluster the ~26k set at 40% ID (single-linkage, cov 0.8 of shorter)
 	scripts/cluster_strict26k.sh
+
+cluster26k_reps: ## Select cluster representatives by highest mean pLDDT (tie: length)
+	$(PY) scripts/select_cluster_representatives.py
