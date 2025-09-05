@@ -89,3 +89,6 @@ cluster26k_check: ## Analyze 26k cluster sizes; flag large clusters (>100); writ
 
 cluster26k_outputs: ## Build member→cluster assignments + size summary (TSV/JSON)
 	$(PY) scripts/compile_cluster_outputs.py
+
+stage_structures: ## Stage AlphaFold structures (symlinks) for analysis; SET=reps_113k|reps_26k|all_113k, LIMIT=N optional
+	$(PY) scripts/prepare_structure_workspace.py --set $${SET:-reps_113k} ${LIMIT:+--limit $${LIMIT}}
