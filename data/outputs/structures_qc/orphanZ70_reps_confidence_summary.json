@@ -1,0 +1,9 @@
+{
+  "set": "orphanZ70_reps",
+  "n_index": 47845,
+  "no_poly_seq": 0,
+  "bad_plddt_field": 0,
+  "missing_pae_before_fetch": 0,
+  "fetched_pae": 0,
+  "report_tsv": "/home/anthonyp07/orphan-domains/data/outputs/structures_qc/orphanZ70_reps_confidence_report.tsv"
+}

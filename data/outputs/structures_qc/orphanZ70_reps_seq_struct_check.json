@@ -1,0 +1,8 @@
+{
+  "set": "reps_113k",
+  "checked": 47845,
+  "poly_exact_mismatch": 0,
+  "atom_minor": 1,
+  "atom_major": 0,
+  "anomalies_tsv": "data/outputs/structures_qc/orphanZ70_reps_seq_struct_anomalies.tsv"
+}

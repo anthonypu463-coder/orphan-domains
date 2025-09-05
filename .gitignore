@@ -14,3 +14,5 @@ data/outputs/cluster26k/tmp/
 data/outputs/cluster26k/*rep_hits*.tsv
 data/structures/
 data/outputs/structures/features/
+data/outputs/structures/features/by_acc/
+*.npz

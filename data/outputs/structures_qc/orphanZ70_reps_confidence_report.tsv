@@ -1,0 +1,4 @@
+uniprot	has_poly_seq	n_b	b_min	b_max	b_in_0_100	has_pae	pae_path
+Q8WSR4	1	2698	22.18	92.73	1	1	data/structures/orphanZ70_reps/by_acc/Q8WSR4/pae.json
+Q5S007	1	2527	21.51	97.11	1	1	data/structures/orphanZ70_reps/by_acc/Q5S007/pae.json
+Q61CW2	1	2313	25.70	94.44	1	1	data/structures/orphanZ70_reps/by_acc/Q61CW2/pae.json
