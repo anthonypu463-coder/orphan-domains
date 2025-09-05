@@ -1,0 +1,17 @@
+{
+  "set": "orphanZ70_reps",
+  "proteins": 45839,
+  "fragments": 67553,
+  "tails_trimmed_N": 0,
+  "tails_trimmed_C": 0,
+  "params": {
+    "pae_thr": 15.0,
+    "plddt_thr": 50.0,
+    "tail_max": 25,
+    "core_skip": 10,
+    "min_fragment": 50
+  },
+  "refined_input": "data/outputs/segments/orphanZ70_reps/segments_refined.tsv",
+  "trimmed_table": "data/outputs/segments/orphanZ70_reps/segments_trimmed.tsv",
+  "actions_log": "data/outputs/segments/orphanZ70_reps/pae_tail_trims.tsv"
+}
