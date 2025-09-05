@@ -1,0 +1,17 @@
+{
+  "set": "orphanZ70_reps",
+  "proteins": 45839,
+  "merges": 118,
+  "splits": 0,
+  "win": 10,
+  "thresholds": {
+    "low_merge": 5.0,
+    "high_split": 15.0,
+    "internal_high": 18.0
+  },
+  "min_fragment": 50,
+  "min_split_len": 120,
+  "min_sep": 30,
+  "refined_table": "data/outputs/segments/orphanZ70_reps/segments_refined.tsv",
+  "actions_log": "data/outputs/segments/orphanZ70_reps/pae_actions.tsv"
+}
