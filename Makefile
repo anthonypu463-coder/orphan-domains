@@ -122,3 +122,6 @@ segment_edge: ## 7D — edge overrides (uniform high=single; uniform low=drop); 
 
 segment_emit: ## 7E — emit preliminary segments + per-segment PDB(.gz); SET=...
 	$(PY) scripts/emit_preliminary_segments.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
+
+segment_pae: ## 8A — validate pLDDT splits with PAE (win=10; low=5Å merge, high=15Å split)
+	$(PY) scripts/validate_boundaries_with_pae.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}

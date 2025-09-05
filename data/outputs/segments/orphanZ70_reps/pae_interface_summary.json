@@ -1,0 +1,17 @@
+{
+  "set": "orphanZ70_reps",
+  "proteins_considered": 50,
+  "interfaces_checked": 166,
+  "class_counts": {
+    "support_split": 19,
+    "suggest_merge": 2,
+    "ambiguous": 145,
+    "no_pae": 0
+  },
+  "window": 10,
+  "thresholds": {
+    "low_merge": 5.0,
+    "high_split": 15.0
+  },
+  "output_tsv": "data/outputs/segments/orphanZ70_reps/pae_interface_checks.tsv"
+}
