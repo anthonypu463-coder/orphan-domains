@@ -104,3 +104,9 @@ struct_features: ## Extract per-residue features (Cα coords + pLDDT) to NPZ; SE
 
 segment: ## 7A: find low-confidence pLDDT regions (pLDDT < THR, default 50); SET=orphanZ70_reps|strict26k_reps|orphanZ70_all
 	$(PY) scripts/find_low_plddt_regions.py --set $${SET:-orphanZ70_reps} --threshold $${THR:-50} --min-run $${MINRUN:-3} ${LIMIT:+--limit $${LIMIT}}
+
+plddt_scan: ## 7A — find low-confidence spans (pLDDT < 50); SET=orphanZ70_reps|strict26k_reps|orphanZ70_all
+	$(PY) scripts/find_low_plddt_regions.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
+
+segment_plddt: ## 7B — segment by pLDDT cuts (midpoints), keep fragments >=50 aa; SET=...
+	$(PY) scripts/segment_by_plddt_cuts.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
