@@ -86,3 +86,6 @@ cluster26k_reps: ## Select cluster representatives by highest mean pLDDT (tie: l
 
 cluster26k_check: ## Analyze 26k cluster sizes; flag large clusters (>100); write histogram & summary
 	$(PY) scripts/check_cluster_sizes.py
+
+cluster26k_outputs: ## Build member→cluster assignments + size summary (TSV/JSON)
+	$(PY) scripts/compile_cluster_outputs.py
