@@ -1,0 +1,30 @@
+{
+  "input_sequences": 113085,
+  "clusters": 47845,
+  "mapped_members": 113085,
+  "singletons": 29615,
+  "largest_cluster_size": 522,
+  "median_cluster_size": 1,
+  "top_clusters": [
+    {
+      "rep": "Q9B9Z1",
+      "size": 522
+    },
+    {
+      "rep": "Q6FYM3",
+      "size": 173
+    },
+    {
+      "rep": "Q1JDK8",
+      "size": 163
+    },
+    {
+      "rep": "Q43364",
+      "size": 163
+    },
+    {
+      "rep": "Q9LDZ0",
+      "size": 152
+    }
+  ]
+}

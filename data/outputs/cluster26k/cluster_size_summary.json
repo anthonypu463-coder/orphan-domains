@@ -1,0 +1,12 @@
+{
+  "clusters": 13598,
+  "total_members": 26000,
+  "singletons": 9084,
+  "singleton_fraction": 0.668,
+  "largest_cluster_size": 149,
+  "p50_cluster_size": 1,
+  "p90_cluster_size": 3,
+  "p99_cluster_size": 12,
+  "flagged_large_clusters": 1,
+  "large_threshold": 100
+}

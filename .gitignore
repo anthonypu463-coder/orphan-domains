@@ -7,3 +7,8 @@ env/ .conda/ .conda_env/ *.conda-lock
 data/afdb/ data/pfam/ data/outputs/
 # Logs & tmp
 logs/ *.log *.tmp
+data/outputs/cluster/db/
+data/outputs/cluster/tmp/
+data/outputs/cluster26k/db/
+data/outputs/cluster26k/tmp/
+data/outputs/cluster26k/*rep_hits*.tsv

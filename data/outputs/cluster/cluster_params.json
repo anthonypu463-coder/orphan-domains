@@ -1,0 +1,8 @@
+{
+  "input_fasta": "data/outputs/orphans/orphan_zero_struct70.fasta",
+  "algo": "mmseqs linclust",
+  "min_seq_id": 0.4,
+  "cov": 0.8,
+  "cov_mode": 5,
+  "threads": 16
+}
