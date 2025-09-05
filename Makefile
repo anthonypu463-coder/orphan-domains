@@ -113,3 +113,12 @@ segment_plddt: ## 7B — segment by pLDDT cuts (midpoints), keep fragments >=50 
 
 segment_refine: ## 7C — enforce min fragment length (>=50 aa); merge interior shorts, drop terminal tails
 	$(PY) scripts/enforce_min_fragment_length.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}} ${MIN:+--min-fragment $${MIN}}
+
+segment_minlen: ## 7C — enforce ≥50aa: merge interior shorts, drop terminal tails; SET=...
+	$(PY) scripts/enforce_min_fragment_length.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
+
+segment_edge: ## 7D — edge overrides (uniform high=single; uniform low=drop); SET=...
+	$(PY) scripts/apply_edge_case_overrides.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
+
+segment_emit: ## 7E — emit preliminary segments + per-segment PDB(.gz); SET=...
+	$(PY) scripts/emit_preliminary_segments.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}

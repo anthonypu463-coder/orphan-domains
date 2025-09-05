@@ -1,0 +1,10 @@
+{
+  "set": "orphanZ70_reps",
+  "proteins_total": 50,
+  "final_segments": 216,
+  "forced_single_full": 0,
+  "dropped_no_stable": 0,
+  "normal_kept": 50,
+  "high_thr": 70.0,
+  "low_thr": 50.0
+}

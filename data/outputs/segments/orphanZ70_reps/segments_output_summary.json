@@ -1,0 +1,10 @@
+{
+  "set": "orphanZ70_reps",
+  "proteins": 10,
+  "fragments_total": 49,
+  "fragments_ok": 49,
+  "fragments_failed": 0,
+  "pdb_dir": "data/outputs/segments/orphanZ70_reps/pdb",
+  "segments_table": "data/outputs/segments/orphanZ70_reps/segments_table.tsv",
+  "segments_jsonl": "data/outputs/segments/orphanZ70_reps/segments.jsonl"
+}

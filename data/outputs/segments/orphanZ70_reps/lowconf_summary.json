@@ -1,0 +1,8 @@
+{
+  "set": "orphanZ70_reps",
+  "threshold": 50.0,
+  "min_run": 3,
+  "processed": 50,
+  "proteins_with_lowconf_spans": 49,
+  "total_lowconf_spans": 283
+}

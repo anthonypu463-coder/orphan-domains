@@ -1,0 +1,8 @@
+{
+  "set": "orphanZ70_reps",
+  "min_fragment": 50,
+  "proteins": 50,
+  "fragments_kept_final": 216,
+  "fragments_merged": 47,
+  "fragments_dropped_terminal": 70
+}

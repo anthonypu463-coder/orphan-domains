@@ -16,3 +16,4 @@ data/structures/
 data/outputs/structures/features/
 data/outputs/structures/features/by_acc/
 *.npz
+data/outputs/segments/*/pdb/
