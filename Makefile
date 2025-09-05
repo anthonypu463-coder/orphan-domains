@@ -110,3 +110,6 @@ plddt_scan: ## 7A — find low-confidence spans (pLDDT < 50); SET=orphanZ70_reps
 
 segment_plddt: ## 7B — segment by pLDDT cuts (midpoints), keep fragments >=50 aa; SET=...
 	$(PY) scripts/segment_by_plddt_cuts.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}}
+
+segment_refine: ## 7C — enforce min fragment length (>=50 aa); merge interior shorts, drop terminal tails
+	$(PY) scripts/enforce_min_fragment_length.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}} ${MIN:+--min-fragment $${MIN}}
