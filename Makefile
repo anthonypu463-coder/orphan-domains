@@ -83,3 +83,6 @@ cluster26k: ## Cluster the ~26k set at 40% ID (single-linkage, cov 0.8 of shorte
 
 cluster26k_reps: ## Select cluster representatives by highest mean pLDDT (tie: length)
 	$(PY) scripts/select_cluster_representatives.py
+
+cluster26k_check: ## Analyze 26k cluster sizes; flag large clusters (>100); write histogram & summary
+	$(PY) scripts/check_cluster_sizes.py
