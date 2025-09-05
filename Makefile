@@ -98,3 +98,6 @@ struct_consistency: ## Check sequence↔structure consistency; SET=reps_113k|rep
 
 struct_confidence: ## Verify pLDDT (B-factor) and ensure PAE JSON exists; SET=orphanZ70_reps|strict26k_reps|orphanZ70_all
 	$(PY) scripts/collect_confidence_data.py --set $${SET:-orphanZ70_reps}
+
+struct_features: ## Extract per-residue features (Cα coords + pLDDT) to NPZ; SET=orphanZ70_reps|strict26k_reps|orphanZ70_all
+	$(PY) scripts/extract_structure_features.py --set $${SET:-orphanZ70_reps} ${LIMIT:+--limit $${LIMIT}} ${OVERWRITE:+--overwrite}
