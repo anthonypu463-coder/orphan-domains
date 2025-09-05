@@ -95,3 +95,6 @@ stage_structures: ## Stage AlphaFold structures (symlinks) for analysis; SET=rep
 
 struct_consistency: ## Check sequence↔structure consistency; SET=reps_113k|reps_26k|all_113k, LIMIT=N optional
 	$(PY) scripts/check_sequence_structure_consistency.py --set $${SET:-reps_113k} ${LIMIT:+--limit $${LIMIT}}
+
+struct_confidence: ## Verify pLDDT (B-factor) and ensure PAE JSON exists; SET=orphanZ70_reps|strict26k_reps|orphanZ70_all
+	$(PY) scripts/collect_confidence_data.py --set $${SET:-orphanZ70_reps}
