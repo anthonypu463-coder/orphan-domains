@@ -1,18 +1,25 @@
-# Orphan Domains (Orphan Proteins)
+# Orphan Domains (AFDB Swiss-Prot)
 
-Reproducible pipeline to discover novel protein domains from AFDB Swiss-Prot.
+A reproducible pipeline and dataset of **novel protein domains** from AlphaFold DB (Swiss-Prot).
 
-## Baseline environment (pinned)
-- Python 3.11 (conda-forge)
-- MMseqs2 v14
-- HMMER 3.x
-- Foldseek v1 (2023)
-- DPAM v2.0
+**Current freeze:** Steps **1–8** complete (final domains minted with stable IDs).  
+Next (not yet included here): **Step 9 (DPAM)**, **Step 10 (≥95% de-dup)**, **Step 11 (novelty)**, **Steps 12–13 (graphs & ML splits)**.
 
-## Setup
-mamba env create -f environment.yml
-conda activate orphan-domains
-python -m orphan.cli env_check --log-format text | tee docs/baseline_env.txt
+## Locked thresholds
+- pLDDT cut: **<50** → candidate linker
+- Minimum fragment: **≥50 aa**
+- PAE interface heuristic: **<5 Å** suggests merge, **>15 Å** supports split (window=10)
+- All decisions logged in `data/outputs/segments/orphanZ70_reps/*.json`
 
-## Layout
-data/ (gitignored), docs/, src/orphan/, scripts/, tests/
+## Key outputs now
+- Final domains (OD IDs):  
+  `data/outputs/domains/orphanZ70_reps/domains_final.{tsv,fasta,jsonl}`  
+  `data/outputs/domains/orphanZ70_reps/domains_summary.json`
+- Segmentation/PAE refinement logs:  
+  `data/outputs/segments/orphanZ70_reps/segments_refined.tsv`  
+  `data/outputs/segments/orphanZ70_reps/segments_trimmed.tsv`  
+  `data/outputs/segments/orphanZ70_reps/segments_refine_summary.json`  
+  `data/outputs/segments/orphanZ70_reps/segments_trim_summary.json`  
+  `data/outputs/segments/orphanZ70_reps/pae_interface_summary.json`
+- Registry: `data/outputs/registry/domain_registry.tsv`
+

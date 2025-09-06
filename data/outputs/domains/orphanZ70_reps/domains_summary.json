@@ -1,0 +1,12 @@
+{
+  "set": "orphanZ70_reps",
+  "source_segments": "segments_trimmed.tsv",
+  "domains": 67553,
+  "outputs": {
+    "tsv": "data/outputs/domains/orphanZ70_reps/domains_final.tsv",
+    "fasta": "data/outputs/domains/orphanZ70_reps/domains_final.fasta",
+    "jsonl": "data/outputs/domains/orphanZ70_reps/domains_final.jsonl",
+    "discarded": "data/outputs/domains/orphanZ70_reps/discarded_no_stable.txt"
+  },
+  "registry": "data/outputs/registry/domain_registry.tsv"
+}

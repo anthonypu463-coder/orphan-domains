@@ -5,6 +5,6 @@ type: dataset
 authors:
   - family-names: Pu
     given-names: Anthony
-version: 0.0.1
-date-released: 2025-09-02
+version: "0.8.0"
+date-released: "2025-09-05"
 repository-code: "https://github.com/anthonypu463-coder/orphan-domains"

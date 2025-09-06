@@ -1,11 +1,11 @@
 {
   "set": "orphanZ70_reps",
-  "proteins_considered": 50,
-  "interfaces_checked": 166,
+  "proteins_considered": 46274,
+  "interfaces_checked": 21832,
   "class_counts": {
-    "support_split": 19,
-    "suggest_merge": 2,
-    "ambiguous": 145,
+    "support_split": 6891,
+    "suggest_merge": 118,
+    "ambiguous": 14823,
     "no_pae": 0
   },
   "window": 10,
